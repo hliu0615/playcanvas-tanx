@@ -7,8 +7,8 @@ process.on('uncaughtException', function(err) {
 // http
 var http = require('http');
 var server = http.createServer();
-var port = parseInt(process.env.TANX_PORT || '30043', 10) || parseInt(process.env.PORT || '30043', 10) || 30043;
-var host = process.env.TANX_HOST || '0.0.0.0';
+var port = process.env.PORT || 30043;
+var host = process.env.HOST || '0.0.0.0';
 server.listen(port, host, function () {
     var host = server.address();
     console.log(process.env.PORT);
