@@ -12,7 +12,7 @@ function Tank(client) {
     this.owner = client;
     client.tank = this;
     // this.hue = Math.floor(Math.random() * 360);
-    this.radius = .75;
+    this.radius = .075;
 
     this.scoreLast = 0;
     this.score = 0;
@@ -20,8 +20,8 @@ function Tank(client) {
     this.pos = Vec2.new(0, 0);
     this.movementDirection = Vec2.new();
 
-    this.speed = 0.3;
-    this.range = 16.0;
+    this.speed = 0.03;
+    this.range = 4.0;
 
     this.tHit = 0;
     this.tRecover = 0;
@@ -33,11 +33,15 @@ function Tank(client) {
     this.shooting = false;
     this.lastShot = 0;
     this.reloading = false;
+    this.coolDown = 1000;
 
+    
     this.killer = null;
     this.died = Date.now();
     this.dead = true;
     this.respawned = Date.now();
+
+
 
     this.angle = Math.random() * 360;
 }
@@ -89,7 +93,7 @@ Tank.prototype.update = function() {
             this.pos.add(Vec2.alpha.setV(this.movementDirection).norm().mulS(this.speed));
 
         // reloading
-        if (this.reloading && now - this.lastShot > 400)
+        if (this.reloading && now - this.lastShot > this.coolDown)
             this.reloading = false;
 
         // auto recover
