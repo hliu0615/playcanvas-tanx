@@ -180,7 +180,6 @@ Lobby.prototype.update = function() {
                 if (deleting ||  // bullet already hit the target
                     tank.dead ||  // tank is dead
                     tank === bullet.owner ||  // own bullet
-                    tank.team === bullet.owner.team || // friendly tank
                     now - tank.respawned <= 2000 ||  // tank just respawned
                     tank.pos.dist(bullet.pos) > (tank.radius + bullet.radius)) {  // no collision
                     return;
