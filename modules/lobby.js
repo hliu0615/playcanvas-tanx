@@ -214,12 +214,20 @@ Lobby.prototype.update = function() {
 
                         // killed, give point
                         if (tank.hp <= 0) {
+                            tank.score = 0;
                             // add score
-                            bullet.owner.score++;
-                            bullet.owner.team.score++;
+                            for(i = 0; i<=(tank.level/3); i++){
+                                bullet.owner.level++;
+                                bullet.owner.speed = bullet.owner.speed*0.985;
+                                bullet.owner.radius = bullet.owner.radius + 0.0045;
+                                bullet.owner.hp = bullet.owner.hp + 0.1;
+                                bullet.owner.score++;
+                                bullet.owner.team.score++;
+                            }
+
                             // winner?
-                            if (bullet.owner.team.score === 32)
-                                winner = bullet.owner.team;
+                            // if (bullet.owner.team.score === 32)
+                            //     winner = bullet.owner.team;
                             // total score
                             room.score++;
                             bullet.owner.owner.send('point', 1);
@@ -313,7 +321,8 @@ Lobby.prototype.update = function() {
             id: tank.id,
             x: parseFloat(tank.pos[0].toFixed(2), 10),
             y: parseFloat(tank.pos[1].toFixed(2), 10),
-            a: Math.floor(tank.angle)
+            a: Math.floor(tank.angle),
+            level: tank.level
         };
 
         if (tank.dead) { // dead

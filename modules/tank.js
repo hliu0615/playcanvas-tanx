@@ -21,6 +21,7 @@ function Tank(client) {
     this.movementDirection = Vec2.new();
 
     this.speed = 0.03;
+    // this.speed = 0.5;
     this.range = 4.0;
 
     this.tHit = 0;
@@ -40,6 +41,8 @@ function Tank(client) {
     this.died = Date.now();
     this.dead = true;
     this.respawned = Date.now();
+
+    this.level = 1;
 
 
 
@@ -64,6 +67,7 @@ Tank.prototype.shoot = function() {
     this.reloading = true;
     this.lastShot = now;
     var bullet = new Bullet(this);
+    bullet.damage += this.level/2;
     if (this.bullets > 0) {
         this.bullets--;
         bullet.special = true;
@@ -76,9 +80,20 @@ Tank.prototype.shoot = function() {
 
 Tank.prototype.respawn = function() {
     if (this.deleted || this.dead) return;
-
     this.dead = true;
     this.died = Date.now();
+
+
+
+    this.radius = .075;
+
+    this.score = 0;
+
+    this.speed = 0.03;
+    // this.speed = 0.5;
+
+    this.level = 1;
+
 };
 
 
@@ -128,7 +143,8 @@ Object.defineProperty(
                 hp: this.hp,
                 shield: this.shield,
                 dead: this.dead,
-                score: this.score
+                score: this.score,
+                level: this.level
             };
         },
         set: function() { }
