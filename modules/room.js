@@ -215,7 +215,43 @@ Room.prototype.join = function(client) {
         self.leave(client);
     });
 
+
+    var adj = [
+                'fleshy',
+                'awesome',
+                'sweet',
+                'gypsy',
+                'arcane',
+                'fancy',
+                'fiery',
+                'Dr.',
+                'sexy',
+                'spicy',
+                'rocky',
+                'effy'
+            ];
+    
+    var noun = [
+        'bean',
+        'jazz',
+        'boob',
+        'rock',
+        'underwear',
+        'breeze',
+        'president',
+        'apple',
+        'noodle',
+        'pants',
+        'hair',
+        'weed'
+    ];
+    
+    var randomNumber = Math.floor(Math.random()*adj.length);
+    var randomNumber2 = Math.floor(Math.random()*noun.length);
+
     var tank = new Tank(client);
+    tank.nickname = adj[randomNumber]+' '+noun[randomNumber2];
+    
     this.world.add('tank', tank);
 
     tank.team = this.pickWeakestTeam();

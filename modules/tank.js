@@ -7,42 +7,11 @@ var tankIds = 0;
 
 function Tank(client) {
     //name
-    var adj = [
-                'fleshy',
-                'awesome',
-                'sweet',
-                'gypsy',
-                'arcane',
-                'fancy',
-                'fiery',
-                'Dr.',
-                'sexy',
-                'spicy',
-                'rocky',
-                'effy'
-            ];
     
-    var noun = [
-        'bean',
-        'jazz',
-        'boob',
-        'rock',
-        'underwear',
-        'breeze',
-        'president',
-        'apple',
-        'noodle',
-        'pants',
-        'hair',
-        'weed'
-    ];
-    
-    var randomNumber = Math.floor(Math.random()*adj.length);
-    var randomNumber2 = Math.floor(Math.random()*noun.length);
 
     this.deleted = false;
 
-    this.nickname = adj[randomNumber]+' '+noun[randomNumber2];
+    this.nickname = 'a player';
     this.id = ++tankIds;
     this.owner = client;
     client.tank = this;
