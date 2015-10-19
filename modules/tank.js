@@ -20,7 +20,7 @@ function Tank(client) {
     this.pos = Vec2.new(0, 0);
     this.movementDirection = Vec2.new();
 
-    this.speed = 0.03;
+    this.speed = 0.05;
     // this.speed = 0.5;
     this.range = 4.0;
 
@@ -89,7 +89,7 @@ Tank.prototype.respawn = function() {
 
     this.score = 0;
 
-    this.speed = 0.03;
+    this.speed = 0.05;
     // this.speed = 0.5;
 
     this.level = 1;
