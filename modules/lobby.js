@@ -219,7 +219,7 @@ Lobby.prototype.update = function() {
                                 bullet.owner.level++;
                                 bullet.owner.speed = bullet.owner.speed*0.975;
                                 bullet.owner.radius = bullet.owner.radius + 0.0095;
-                                bullet.owner.range = bullet.owner.range*0.985;
+                                bullet.owner.range = bullet.owner.range*0.99;
                                 bullet.owner.hp = bullet.owner.hp + 0.1;
                                 bullet.owner.score++;
                                 bullet.owner.team.score++;

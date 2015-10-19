@@ -90,6 +90,8 @@ Tank.prototype.respawn = function() {
     this.score = 0;
 
     this.speed = 0.04;
+
+    this.range = 4.0;
     // this.speed = 0.5;
 
     this.level = 1;
