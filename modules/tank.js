@@ -24,7 +24,7 @@ function Tank(client) {
     this.pos = Vec2.new(0, 0);
     this.movementDirection = Vec2.new();
 
-    this.speed = 0.04;
+    this.speed = 0.4;
     // this.speed = 0.5;
     this.range = 4.0;
 
@@ -160,38 +160,77 @@ Object.defineProperty(
 
 function generateName() {
         var adj = [
-                'fleshy',
-                'awesome',
-                'sweet',
-                'gypsy',
-                'arcane',
-                'fancy',
-                'fiery',
+                'Mc.',
+                'Sweet',
+                'Gypsy',
+                'Fancy',
                 'Dr.',
-                'sexy',
-                'spicy',
-                'rocky',
-                'effy'
+                'Sexy',
+                'Spicy',
+                'Miss',
+                'Mr',
+                'Jewish',
+                'Sneaky',
+                'Little',
+                'Giant',
+                'Holy',
+                'Lord',
+                'Crunchy',
+                'Sassy',
+                'Salty',
+                'Male',
+                'Female',
+                'Drunken',
+                'Wee',
+                'Devilish',
+                'Professor',
+                'Officer',
+                'Young',
+                'Creamy',
+                'Diabolic',
+                'Puffy',
+                'President',
+                'Homeless',
+                'Rookie',
+                'Goth',
+                'Red'
             ];
     
     var noun = [
-        'bean',
-        'jazz',
-        'boob',
-        'rock',
-        'underwear',
-        'breeze',
-        'president',
-        'apple',
-        'noodle',
-        'pants',
-        'hair',
-        'weed'
+        'Bean',
+        'Boob',
+        'Panty',
+        'Doom',
+        'Wax',
+        'Teemo',
+        'Goblin',
+        'Pooper',
+        'Ball',
+        'Finger',
+        'Hooter',
+        'Crap',
+        'Lannister',
+        'Stark',
+        'Boom',
+        'Bacon',
+        'Boner',
+        'Pope',
+        'God',
+        'Tyrion',
+        'Underwood',
+        'Vladmir',
+        'Clinton',
+        'Hipster',
+        'Troll',
+        'Javascript',
+        'Sausage',
+        'Avenger',
+        'Godzilla'
     ];
     
     var randomNumber = Math.floor(Math.random()*adj.length);
     var randomNumber2 = Math.floor(Math.random()*noun.length);
-    var name = adj[randomNumber] + '' + noun[randomNumber2];
+    var name = adj[randomNumber] + ' ' + noun[randomNumber2];
 
     return name
 }
