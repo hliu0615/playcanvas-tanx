@@ -46,7 +46,7 @@ function Tank(client) {
     this.dead = true;
     this.respawned = Date.now();
 
-    this.level = 1;
+    this.level = 0;
 
 
 
@@ -193,7 +193,8 @@ function generateName() {
                 'Homeless',
                 'Rookie',
                 'Goth',
-                'Red'
+                'Red',
+                'Captain'
             ];
     
     var noun = [
@@ -225,8 +226,9 @@ function generateName() {
         'Javascript',
         'Sausage',
         'Avenger',
-        'Godzilla'
-    ];
+        'Godzilla',
+        'Rooster'
+];
     
     var randomNumber = Math.floor(Math.random()*adj.length);
     var randomNumber2 = Math.floor(Math.random()*noun.length);

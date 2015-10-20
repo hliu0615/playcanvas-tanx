@@ -322,7 +322,7 @@ Lobby.prototype.update = function() {
             x: parseFloat(tank.pos[0].toFixed(2), 10),
             y: parseFloat(tank.pos[1].toFixed(2), 10),
             a: Math.floor(tank.angle),
-            level: tank.level,
+            level: tank.score,
             name: tank.nickname
         };
 
