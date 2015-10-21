@@ -225,14 +225,19 @@ function generateName() {
                 'Baby',
                 'Teenager',
                 'A Wild',
-                'American'
+                'American',
+                'French',
+                'Indian',
+                'Legendary',
+                'Epic',
+                'Lana Del',
+                'Sweaty'
             ];
     
     var noun = [
         'Bean',
         'Boob',
         'Panty',
-        'Doom',
         'Wax',
         'Teemo',
         'Goblin',
@@ -241,16 +246,11 @@ function generateName() {
         'Finger',
         'Hooter',
         'Crap',
-        'Lannister',
         'Stark',
         'Boom',
         'Bacon',
         'Boner',
         'Pope',
-        'God',
-        'Tyrion',
-        'Underwood',
-        'Vladmir',
         'Clinton',
         'Hipster',
         'Troll',
@@ -263,9 +263,12 @@ function generateName() {
         'Pancake',
         'Turtle',
         'Pie',
-        'Jesus',
         'Butcher',
-        'Lamb'
+        'Lamb',
+        'Orange',
+        'Mage',
+        'Rogue',
+        'Cop'
 ];
     
     var randomNumber = Math.floor(Math.random()*adj.length);
