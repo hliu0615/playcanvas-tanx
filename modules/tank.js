@@ -224,7 +224,8 @@ function generateName() {
                 'Humongous',
                 'Baby',
                 'Teenager',
-                'A Wild'
+                'A Wild',
+                'American'
             ];
     
     var noun = [
@@ -260,7 +261,11 @@ function generateName() {
         'Rooster',
         'Hustler',
         'Pancake',
-        'Turtle'
+        'Turtle',
+        'Pie',
+        'Jesus',
+        'Butcher',
+        'Lamb'
 ];
     
     var randomNumber = Math.floor(Math.random()*adj.length);
