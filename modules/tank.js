@@ -77,7 +77,7 @@ Tank.prototype.shoot = function() {
     var bullet = new Bullet(this);
     if (this.bullets > 0) {
         this.bullets--;
-        bullet.damage = 6.67;
+        bullet.damage = 7.5;
         bullet.special = true;
     }
     return bullet;

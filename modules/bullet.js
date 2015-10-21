@@ -11,7 +11,7 @@ function Bullet(owner) {
 
     this.owner = owner;
     this.id = ++bulletIds;
-    this.damage = 3.34;
+    this.damage = 2.5;
 
     this.speed = .275*(Math.max(1-owner.score*0.03,0.6));
     this.radius = Math.min(.3+0.018*owner.score,0.78);
