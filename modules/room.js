@@ -87,57 +87,855 @@ function Room() {
     // x, y, type, delay, lastSpawn
     this.pickables = [
         {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'repair',
             item: null,
             delay: 60000+Math.random()*120000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'repair',
-            item: null,
-            delay: 560000+Math.random()*120000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'repair',
             item: null,
             delay: 60000+Math.random()*120000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'repair',
             item: null,
             delay: 60000+Math.random()*120000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'repair',
+            item: null,
+            delay: 60000+Math.random()*120000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: 24,
+            y: 24,
+            type: 'shield',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
+            type: 'damage',
+            item: null,
+            delay: 10000+Math.random()*60000,
+            picked: 0
+        }, {
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
@@ -150,792 +948,792 @@ function Room() {
             delay: 110000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
@@ -948,792 +1746,792 @@ function Room() {
             delay: 110000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
@@ -1746,1562 +2544,764 @@ function Room() {
             delay: 110000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
             picked: 0
         }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: 24,
-            y: 24,
-            type: 'shield',
-            item: null,
-            delay: 110000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
-            type: 'damage',
-            item: null,
-            delay: 10000+Math.random()*60000,
-            picked: 0
-        }, {
-            x: Math.random()*50,
-            y: Math.random()*50,
+            x: Math.random()*48,
+            y: Math.random()*48,
             type: 'damage',
             item: null,
             delay: 10000+Math.random()*60000,
