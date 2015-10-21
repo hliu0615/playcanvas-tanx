@@ -217,10 +217,10 @@ Lobby.prototype.update = function() {
                             // add score
                             for(i = 0; i<=(tank.level/3); i++){
                                 bullet.owner.level++;
-                                bullet.owner.speed = bullet.owner.speed*0.975;
-                                bullet.owner.radius = bullet.owner.radius + 0.0095;
-                                bullet.owner.range = bullet.owner.range*0.99;
-                                bullet.owner.hp = bullet.owner.hp + 0.1;
+                                bullet.owner.speed = Math.max(bullet.owner.speed*0.985,0.065);
+                                bullet.owner.radius = bullet.owner.radius + 0.01;
+                                bullet.owner.coolDown = Math.max(500,(bullet.owner.coolDown)*0.99);
+                                bullet.owner.range<=10?bullet.owner.range += 0.1: bullet.owner.range=bullet.owner.range;
                                 bullet.owner.score++;
                                 bullet.owner.team.score++;
                             }
