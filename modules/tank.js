@@ -16,7 +16,7 @@ function Tank(client) {
     this.owner = client;
     client.tank = this;
     // this.hue = Math.floor(Math.random() * 360);
-    this.radius = .1;
+    this.radius = .075;
 
     this.scoreLast = 0;
     this.score = 0;
@@ -24,9 +24,9 @@ function Tank(client) {
     this.pos = Vec2.new(0, 0);
     this.movementDirection = Vec2.new();
 
-    this.speed = 0.09;
+    this.speed = 0.4;
     // this.speed = 0.5;
-    this.range = 6.0;
+    this.range = 4.0;
 
     this.tHit = 0;
     this.tRecover = 0;
@@ -71,9 +71,12 @@ Tank.prototype.shoot = function() {
     this.reloading = true;
     this.lastShot = now;
     var bullet = new Bullet(this);
+    bullet.damage += this.level/2;
     if (this.bullets > 0) {
         this.bullets--;
         bullet.special = true;
+        bullet.damage += 2;
+        bullet.speed += .2;
     }
     return bullet;
 };
@@ -86,17 +89,16 @@ Tank.prototype.respawn = function() {
 
 
 
-    this.radius = .1;
+    this.radius = .075;
 
     this.score = 0;
 
-    this.speed = 0.09;
+    this.speed = 0.04;
 
-    this.range = 6.0;
+    this.range = 4.0;
     // this.speed = 0.5;
 
-    this.coolDown = 1000;
-    this.level = 0;
+    this.level = 1;
 
 };
 
