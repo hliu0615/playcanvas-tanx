@@ -74,11 +74,15 @@ Tank.prototype.shoot = function() {
     this.tHit = now;
     this.reloading = true;
     this.lastShot = now;
+    if(this.bullets>0){
+        this.range = this.range*1.5;
+    }
     var bullet = new Bullet(this);
     if (this.bullets > 0) {
-        this.bullets--;
+        this.bullets--; 
         bullet.damage = 7.5;
         bullet.special = true;
+        bullet.speed = bullet.speed*1.2;
     }
     return bullet;
 };
@@ -214,7 +218,13 @@ function generateName() {
                 'Rookie',
                 'Goth',
                 'Red',
-                'Captain'
+                'Captain',
+                'Magnificent',
+                'Gigantic',
+                'Humongous',
+                'Baby',
+                'Teenager',
+                'A Wild'
             ];
     
     var noun = [
@@ -247,7 +257,10 @@ function generateName() {
         'Sausage',
         'Avenger',
         'Godzilla',
-        'Rooster'
+        'Rooster',
+        'Hustler',
+        'Pancake',
+        'Turtle'
 ];
     
     var randomNumber = Math.floor(Math.random()*adj.length);
