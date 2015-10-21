@@ -90,18 +90,36 @@ Lobby.prototype.update = function() {
                 if (! pickable.collideCircle(tank))
                     return;
 
+                
+
                 switch(pickable.type) {
                     case 'repair':
-                        // don't need repair
-                        if (tank.hp == 10)
-                            return;
-
-                        // recover a bit
-                        tank.hp = Math.min(10, tank.hp + 3);
+                        tank.score += 5;
+                        tank.level += 5;
+                        for (var i = 0; i < 5; i++) {
+                            console.log("got here");
+                            tank.counter = 0;
+                            tank.speed = Math.max(tank.speed*0.995,0.075);
+                            tank.radius = tank.radius + 0.015;
+                            tank.coolDown = Math.max(500,(tank.coolDown)*0.992);
+                            tank.range<=14?tank.range += 0.07: tank.range=tank.range;
+                        };
                         break;
                     case 'damage':
                         // give 3 bullets
-                        tank.bullets += 3;
+                        //tank.bullets += 3;
+                        tank.score += 0.1;
+                        tank.level += 0.1;
+                        tank.counter += 1;
+                        console.log(tank.counter);
+                        if (tank.counter == 10){
+                            console.log("got here");
+                            tank.counter = 0;
+                            tank.speed = Math.max(tank.speed*0.995,0.075);
+                            tank.radius = tank.radius + 0.015;
+                            tank.coolDown = Math.max(500,(tank.coolDown)*0.992);
+                            tank.range<=14?tank.range += 0.07: tank.range=tank.range;
+                        }
                         break;
                     case 'shield':
                         // don't pickup if shield already full
@@ -213,17 +231,18 @@ Lobby.prototype.update = function() {
 
                         // killed, give point
                         if (tank.hp <= 0) {
-                            tank.score = 0;
+                            
                             // add score
-                            for(i = 0; i<=(tank.level/3); i++){
+                            for(i = 0; i<=(tank.score/2); i++){
                                 bullet.owner.level++;
-                                bullet.owner.speed = Math.max(bullet.owner.speed*0.985,0.065);
-                                bullet.owner.radius = bullet.owner.radius + 0.01;
-                                bullet.owner.coolDown = Math.max(500,(bullet.owner.coolDown)*0.99);
-                                bullet.owner.range<=10?bullet.owner.range += 0.1: bullet.owner.range=bullet.owner.range;
+                                bullet.owner.speed = Math.max(bullet.owner.speed*0.995,0.075);
+                                bullet.owner.radius = bullet.owner.radius + 0.015;
+                                bullet.owner.coolDown = Math.max(500,(bullet.owner.coolDown)*0.992);
+                                bullet.owner.range<=14?bullet.owner.range += 0.07: bullet.owner.range=bullet.owner.range;
                                 bullet.owner.score++;
-                                bullet.owner.team.score++;
                             }
+
+                            tank.score = 0;
 
                             // winner?
                             // if (bullet.owner.team.score === 32)

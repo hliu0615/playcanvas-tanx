@@ -11,10 +11,10 @@ function Bullet(owner) {
 
     this.owner = owner;
     this.id = ++bulletIds;
-    this.damage = 3.0;
+    this.damage = 3.34;
 
-    this.speed = .2*(Math.max(1-owner.score*0.01,0.55));
-    this.radius = Math.min(.4+0.018*owner.score,0.78);
+    this.speed = .275*(Math.max(1-owner.score*0.03,0.6));
+    this.radius = Math.min(.3+0.018*owner.score,0.78);
     this.pos = Vec2.new(parseFloat(this.owner.pos[0].toFixed(3), 10), parseFloat(this.owner.pos[1].toFixed(3), 10));
     this.target = Vec2.new().setR((-this.owner.angle + 90) * (Math.PI / 180.0)).mulS(this.owner.range).add(this.pos);
 

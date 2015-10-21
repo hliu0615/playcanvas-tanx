@@ -26,10 +26,11 @@ function Tank(client) {
 
     this.speed = 0.09;
     // this.speed = 0.5;
-    this.range = 6.0;
+    this.range = 7.0;
 
     this.tHit = 0;
     this.tRecover = 0;
+    this.tCharge = 0;
 
     this.hp = 10.0;
     this.shield = 0;
@@ -47,6 +48,9 @@ function Tank(client) {
     this.respawned = Date.now();
 
     this.level = 0;
+
+    this.counter = 0;
+
 
 
 
@@ -73,6 +77,7 @@ Tank.prototype.shoot = function() {
     var bullet = new Bullet(this);
     if (this.bullets > 0) {
         this.bullets--;
+        bullet.damage = 6.67;
         bullet.special = true;
     }
     return bullet;
@@ -92,7 +97,7 @@ Tank.prototype.respawn = function() {
 
     this.speed = 0.09;
 
-    this.range = 6.0;
+    this.range = 7.0;
     // this.speed = 0.5;
 
     this.coolDown = 1000;
@@ -115,6 +120,23 @@ Tank.prototype.update = function() {
         if (this.reloading && now - this.lastShot > this.coolDown)
             this.reloading = false;
 
+        //charge
+        if (this.bullets<3 && now - this.tCharge>10000){
+            if (!this.freezeCharge){
+                this.bullets = this.bullets + 1;
+                this.tCharge = now;
+                if (this.bullets == 3){
+                    this.freezeCharge = true;
+                    this.tCharge = 0;
+                }
+            } else {
+                this.tCharge = now;
+                this.freezeCharge = false;
+            }
+            
+        }
+        
+            
         // auto recover
         if (this.hp < 10 && now - this.tHit > 3000 && now - this.tRecover > 1000) {
             this.hp = Math.min(this.hp + 1, 10);
