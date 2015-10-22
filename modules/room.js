@@ -3316,7 +3316,7 @@ Room.prototype.createBlocks = function(data) {
 
 Room.prototype.pickWeakestTeam = function() {
     var list = this.teams.filter(function(item) {
-        return item.tanks < 4;
+        return item.tanks < 6;
     });
 
     // sort by number of tanks and then score

@@ -15,7 +15,7 @@ function Bullet(owner) {
     console.log("owner score");
     console.log(owner.score);
     this.speed = .265*(Math.max((1-owner.score*0.004),0.6));
-    this.radius = Math.min(.3+0.009*owner.score,0.78);
+    this.radius = Math.min(.3+0.0075*owner.score,0.78);
     this.pos = Vec2.new(parseFloat(this.owner.pos[0].toFixed(3), 10), parseFloat(this.owner.pos[1].toFixed(3), 10));
     this.target = Vec2.new().setR((-this.owner.angle + 90) * (Math.PI / 180.0)).mulS(this.owner.range).add(this.pos);
 
