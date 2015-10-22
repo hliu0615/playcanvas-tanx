@@ -99,15 +99,17 @@ Lobby.prototype.update = function() {
                         for (var i = 0; i < 5; i++) {
                             console.log("got here");
                             tank.counter = 0;
-                            tank.speed = Math.max(tank.speed*0.995,0.075);
-                            tank.radius = tank.radius + 0.015;
-                            tank.coolDown = Math.max(500,(tank.coolDown)*0.992);
-                            tank.range<=14?tank.range += 0.07: tank.range=tank.range;
+                            tank.speed = Math.max(tank.speed*0.9975,0.075);
+                            tank.radius = tank.radius + 0.0075;
+                            tank.coolDown = Math.max(500,(tank.coolDown)*0.996);
+                            tank.range<=14?tank.range += 0.035: tank.range=tank.range;
                         };
                         break;
                     case 'damage':
                         // give 3 bullets
                         //tank.bullets += 3;
+                        console.log("lobby says tank score is:");
+                        console.log(tank.score);
                         tank.score += 0.1;
                         tank.level += 0.1;
                         tank.counter += 1;
@@ -115,10 +117,10 @@ Lobby.prototype.update = function() {
                         if (tank.counter == 10){
                             console.log("got here");
                             tank.counter = 0;
-                            tank.speed = Math.max(tank.speed*0.995,0.075);
-                            tank.radius = tank.radius + 0.015;
-                            tank.coolDown = Math.max(500,(tank.coolDown)*0.992);
-                            tank.range<=14?tank.range += 0.07: tank.range=tank.range;
+                            tank.speed = Math.max(tank.speed*0.9975,0.075);
+                            tank.radius = tank.radius + 0.0075;
+                            tank.coolDown = Math.max(500,(tank.coolDown)*0.996);
+                            tank.range<=14?tank.range += 0.035: tank.range=tank.range;
                         }
                         break;
                     case 'shield':
@@ -235,10 +237,10 @@ Lobby.prototype.update = function() {
                             // add score
                             for(i = 0; i<=(tank.score/2); i++){
                                 bullet.owner.level++;
-                                bullet.owner.speed = Math.max(bullet.owner.speed*0.995,0.075);
-                                bullet.owner.radius = bullet.owner.radius + 0.015;
-                                bullet.owner.coolDown = Math.max(500,(bullet.owner.coolDown)*0.992);
-                                bullet.owner.range<=14?bullet.owner.range += 0.07: bullet.owner.range=bullet.owner.range;
+                                bullet.owner.speed = Math.max(bullet.owner.speed*0.9975,0.075);
+                                bullet.owner.radius = bullet.owner.radius + 0.0075;
+                                bullet.owner.coolDown = Math.max(500,(bullet.owner.coolDown)*0.996);
+                                bullet.owner.range<=14?bullet.owner.range += 0.035: bullet.owner.range=bullet.owner.range;
                                 bullet.owner.score++;
                             }
 
@@ -342,7 +344,8 @@ Lobby.prototype.update = function() {
             y: parseFloat(tank.pos[1].toFixed(2), 10),
             a: Math.floor(tank.angle),
             level: tank.score,
-            name: tank.nickname
+            name: tank.nickname,
+            energy: tank.bullets
         };
 
         if (tank.dead) { // dead

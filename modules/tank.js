@@ -34,7 +34,7 @@ function Tank(client) {
 
     this.hp = 10.0;
     this.shield = 0;
-    this.bullets = 0;
+    this.bullets = 1;
 
     this.shooting = false;
     this.lastShot = 0;
@@ -69,20 +69,22 @@ Tank.prototype.delete = function() {
 
 Tank.prototype.shoot = function() {
     if (this.deleted || this.dead) return;
-
+    console.log("tank says his score is:");
+    console.log(this.score);
     var now = Date.now();
     this.tHit = now;
     this.reloading = true;
     this.lastShot = now;
     if(this.bullets>0){
-        this.range = this.range*1.5;
+        this.range = this.range*(3/2);
     }
     var bullet = new Bullet(this);
     if (this.bullets > 0) {
         this.bullets--; 
-        bullet.damage = 7.5;
+        bullet.damage = 5;
         bullet.special = true;
-        bullet.speed = bullet.speed*1.2;
+        bullet.speed = bullet.speed*1.5;
+        this.range = this.range*(2/3);
     }
     return bullet;
 };
@@ -94,7 +96,7 @@ Tank.prototype.respawn = function() {
     this.died = Date.now();
 
 
-
+    this.bullets = 1;
     this.radius = .1;
 
     this.score = 0;
@@ -125,7 +127,7 @@ Tank.prototype.update = function() {
             this.reloading = false;
 
         //charge
-        if (this.bullets<3 && now - this.tCharge>10000){
+        if (this.bullets<3 && now - this.tCharge>20000){
             if (!this.freezeCharge){
                 this.bullets = this.bullets + 1;
                 this.tCharge = now;
