@@ -127,7 +127,7 @@ Tank.prototype.update = function() {
             this.reloading = false;
 
         //charge
-        if (this.bullets<3 && now - this.tCharge>20000){
+        if (this.bullets<3 && now - this.tCharge>22000){
             if (!this.freezeCharge){
                 this.bullets = this.bullets + 1;
                 this.tCharge = now;
@@ -144,7 +144,7 @@ Tank.prototype.update = function() {
         
             
         // auto recover
-        if (this.hp < 10 && now - this.tHit > 9000 && now - this.tRecover > 1000) {
+        if (this.hp < 10 && now - this.tHit > 15000 && now - this.tRecover > 500) {
             this.hp = Math.min(this.hp + 1, 10);
             this.tRecover = now;
         }
