@@ -16,7 +16,7 @@ function Room() {
     this.world = new World({
         width: 48,
         height: 48,
-        clusterSize: 4,
+        clusterSize: 6,
         indexes: [ 'tank', 'bullet', 'pickable', 'block' ]
     });
 

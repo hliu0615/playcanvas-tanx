@@ -11,7 +11,7 @@ function Lobby() {
 Lobby.prototype.join = function(client) {
     var room = null;
     for(var i = 0; i < this.rooms.length; i++) {
-        if (this.rooms[i].clients.length < 16) {
+        if (this.rooms[i].clients.length < 24) {
             room = this.rooms[i];
             break;
         }
