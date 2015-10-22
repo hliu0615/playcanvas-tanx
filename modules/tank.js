@@ -129,9 +129,9 @@ Tank.prototype.update = function() {
         //charge
         if (this.bullets<3 && now - this.tCharge>220){
             if (!this.freezeCharge){
-                this.bullets = this.bullets + 0.01;
+                this.bullets = this.bullets + 0.01 + this.score*0.0002;
                 this.tCharge = now;
-                if (this.bullets == 3){
+                if (this.bullets >= 3){
                     this.freezeCharge = true;
                     this.tCharge = 0;
                 }
