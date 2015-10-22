@@ -94,10 +94,9 @@ Lobby.prototype.update = function() {
 
                 switch(pickable.type) {
                     case 'repair':
-                        tank.score += 5;
-                        tank.level += 5;
-                        for (var i = 0; i < 5; i++) {
-                            console.log("got here");
+                        tank.score += 2;
+                        tank.level += 2;
+                        for (var i = 0; i < 2; i++) {
                             tank.counter = 0;
                             tank.speed = Math.max(tank.speed*0.9975,0.075);
                             tank.radius = tank.radius + 0.0075;
@@ -108,14 +107,11 @@ Lobby.prototype.update = function() {
                     case 'damage':
                         // give 3 bullets
                         //tank.bullets += 3;
-                        console.log("lobby says tank score is:");
-                        console.log(tank.score);
                         tank.score += 0.1;
                         tank.level += 0.1;
                         tank.counter += 1;
                         console.log(tank.counter);
                         if (tank.counter == 10){
-                            console.log("got here");
                             tank.counter = 0;
                             tank.speed = Math.max(tank.speed*0.9975,0.075);
                             tank.radius = tank.radius + 0.0075;
