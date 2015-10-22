@@ -204,8 +204,8 @@ function generateName() {
                 'Crunchy',
                 'Sassy',
                 'A Salty',
-                'Male',
-                'Female',
+                'A Male',
+                'A Female',
                 'Drunken',
                 'Wee',
                 'Devilish',
@@ -233,8 +233,16 @@ function generateName() {
                 'Legendary',
                 'Epic',
                 'Lana Del',
-                'Sweaty'
-            ];
+                'Sweaty',
+                'A Hairy',
+                'An overdosed',
+                'Righteous',
+                'An upscale',
+                'CEO',
+                'Unholy',
+                'A Fat'            
+
+                ];
     
     var noun = [
         'Bean',
@@ -248,7 +256,6 @@ function generateName() {
         'Finger',
         'Hooter',
         'Crap',
-        'Stark',
         'Bacon',
         'Boner',
         'Pope',
@@ -269,7 +276,10 @@ function generateName() {
         'Orange',
         'Mage',
         'Rogue',
-        'Cop'
+        'Cop',
+        'Kimchi',
+        'Lama',
+        'Assasin'
 ];
     
     var randomNumber = Math.floor(Math.random()*adj.length);
