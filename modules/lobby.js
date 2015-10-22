@@ -238,6 +238,7 @@ Lobby.prototype.update = function() {
                                 bullet.owner.coolDown = Math.max(500,(bullet.owner.coolDown)*0.996);
                                 bullet.owner.range<=14?bullet.owner.range += 0.035: bullet.owner.range=bullet.owner.range;
                                 bullet.owner.score++;
+                                bullet.owner.hp = 10;
                             }
 
                             tank.score = 0;
