@@ -75,11 +75,11 @@ Tank.prototype.shoot = function() {
     this.tHit = now;
     this.reloading = true;
     this.lastShot = now;
-    if(this.bullets>0){
+    if(this.bullets>=1){
         this.range = this.range*(3/2);
     }
     var bullet = new Bullet(this);
-    if (this.bullets > 0) {
+    if (this.bullets >= 1) {
         this.bullets--; 
         bullet.damage = 5;
         bullet.special = true;
