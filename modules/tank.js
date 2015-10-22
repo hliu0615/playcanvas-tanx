@@ -144,7 +144,7 @@ Tank.prototype.update = function() {
         
             
         // auto recover
-        if (this.hp < 10 && now - this.tHit > 15000 && now - this.tRecover > 500) {
+        if (this.hp < 10 && now - this.tHit > 12500 && now - this.tRecover > 200) {
             this.hp = Math.min(this.hp + 1, 10);
             this.tRecover = now;
         }
