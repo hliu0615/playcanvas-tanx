@@ -127,9 +127,9 @@ Tank.prototype.update = function() {
             this.reloading = false;
 
         //charge
-        if (this.bullets<3 && now - this.tCharge>220){
+        if (this.bullets<3 && now - this.tCharge>250){
             if (!this.freezeCharge){
-                this.bullets = this.bullets + 0.01 + this.score*0.0002;
+                this.bullets = Math.max(this.bullets + 0.01 + this.score*0.00015,0.025);
                 this.tCharge = now;
                 if (this.bullets >= 3){
                     this.freezeCharge = true;
@@ -245,7 +245,6 @@ function generateName() {
                 ];
     
     var noun = [
-        'Bean',
         'Boob',
         'Panty',
         'Wax',
