@@ -129,7 +129,7 @@ Tank.prototype.update = function() {
         //charge
         if (this.bullets<3 && now - this.tCharge>200){
             if (!this.freezeCharge){
-                this.bullets = Math.max(this.bullets + 0.01 + this.score*0.00015,0.025);
+                this.bullets = Math.max(this.bullets + 0.01 + this.score*0.00025,0.025);
                 this.tCharge = now;
                 if (this.bullets >= 3){
                     this.freezeCharge = true;

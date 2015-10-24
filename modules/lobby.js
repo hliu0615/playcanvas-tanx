@@ -101,7 +101,7 @@ Lobby.prototype.update = function() {
                             tank.speed = Math.max(tank.speed*0.994,0.075);
                             tank.radius = tank.radius + 0.0075;
                             tank.coolDown = Math.max(500,(tank.coolDown)*0.996);
-                            tank.range<=14?tank.range += 0.035: tank.range=tank.range;
+                            tank.range<=14?tank.range += 0.06: tank.range=tank.range;
                         };
                         break;
                     case 'damage':
@@ -116,7 +116,7 @@ Lobby.prototype.update = function() {
                             tank.speed = Math.max(tank.speed*0.994,0.075);
                             tank.radius = tank.radius + 0.0075;
                             tank.coolDown = Math.max(500,(tank.coolDown)*0.996);
-                            tank.range<=14?tank.range += 0.035: tank.range=tank.range;
+                            tank.range<=14?tank.range += 0.06: tank.range=tank.range;
                         }
                         break;
                     case 'shield':
@@ -236,7 +236,7 @@ Lobby.prototype.update = function() {
                                 bullet.owner.speed = Math.max(bullet.owner.speed*0.994,0.075);
                                 bullet.owner.radius = bullet.owner.radius + 0.0075;
                                 bullet.owner.coolDown = Math.max(500,(bullet.owner.coolDown)*0.996);
-                                bullet.owner.range<=14?bullet.owner.range += 0.035: bullet.owner.range=bullet.owner.range;
+                                bullet.owner.range<=14?bullet.owner.range += 0.06: bullet.owner.range=bullet.owner.range;
                                 bullet.owner.score++;
                                 bullet.owner.hp = 10;
                             }
