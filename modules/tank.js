@@ -240,7 +240,8 @@ function generateName() {
                 'An upscale',
                 'CEO',
                 'Unholy',
-                'A Fat'            
+                'A Fat',
+                'Muslin'            
 
                 ];
     
@@ -261,7 +262,7 @@ function generateName() {
         'Clinton',
         'Hipster',
         'Troll',
-        'Javascript',
+        'Python',
         'Sausage',
         'Avenger',
         'Godzilla',
@@ -278,7 +279,8 @@ function generateName() {
         'Cop',
         'Kimchi',
         'Lama',
-        'Assasin'
+        'Assasin',
+        'Kabab'
 ];
     
     var randomNumber = Math.floor(Math.random()*adj.length);
