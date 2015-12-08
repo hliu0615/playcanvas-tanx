@@ -1,4 +1,5 @@
 var Cluster = require('./cluster');
+var CANNON = require('.././node_modules/cannon');
 
 
 function World(args) {
@@ -23,6 +24,22 @@ function World(args) {
     }
 
     this.length = 0;
+
+    //create the physcis world
+    this.physicsWorld = new CANNON.World();
+    this.physicsWorld.gravity.set(0, 0, -9.82);
+
+
+    //create a plane
+
+    // Create a plane
+    var groundBody = new CANNON.Body({
+        mass: 0 // mass == 0 makes the body static
+    });
+    var groundShape = new CANNON.Plane();
+    groundBody.addShape(groundShape);
+    this.physicsWorld.addBody(groundBody);
+
 }
 
 World.prototype.forEach = function(cluster, fn) {

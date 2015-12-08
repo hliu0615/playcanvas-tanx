@@ -69,8 +69,6 @@ Tank.prototype.delete = function() {
 
 Tank.prototype.shoot = function() {
     if (this.deleted || this.dead) return;
-    console.log("tank says his score is:");
-    console.log(this.score);
     var now = Date.now();
     this.tHit = now;
     this.reloading = true;

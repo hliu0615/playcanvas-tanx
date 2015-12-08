@@ -1,10 +1,12 @@
 var Vec2 = require('./vec2');
 var Room = require('./room');
 var Pickable = require('./pickable');
+var CANNON = require('.././node_modules/cannon');
 
 
 function Lobby() {
     this.rooms = [ ];
+
 }
 
 
@@ -52,6 +54,11 @@ Lobby.prototype.update = function() {
 
     // game state to send
     var state = { };
+
+
+    var fixedTimeStep = 1.0 / 60.0; // seconds
+    var maxSubSteps = 3;
+    world.physicsWorld.step(fixedTimeStep,0.1,maxSubSteps);
 
     // for each tank
     world.forEach('tank', function(tank) {
@@ -110,7 +117,6 @@ Lobby.prototype.update = function() {
                         tank.score += 0.1;
                         tank.level += 0.1;
                         tank.counter += 1;
-                        console.log(tank.counter);
                         if (tank.counter == 10){
                             tank.counter = 0;
                             tank.speed = Math.max(tank.speed*0.994,0.075);
@@ -150,9 +156,11 @@ Lobby.prototype.update = function() {
             // new bullet
             var bullet = tank.shoot();
             world.add('bullet', bullet);
+            world.physicsWorld.addBody(bullet.rigidBody);
 
             // publish
             state.bullets = state.bullets || [ ];
+            console.log(bullet.data);
             state.bullets.push(bullet.data);
         }
     });
@@ -181,14 +189,33 @@ Lobby.prototype.update = function() {
         // bullet update
         bullet.update();
 
+        console.log(bullet.data);
+        state.bulletsUpdate = state.bulletsUpdate || [ ];
+        state.bulletsUpdate.push(bullet.data);
+
+
         var deleting = false;
         if (bullet.pos.dist(bullet.target) < 1) {
             deleting = true;
-        } else if (bullet.pos[0] <= 0 ||
-                   bullet.pos[1] <= 0 ||
-                   bullet.pos[0] >= world.width ||
-                   bullet.pos[1] >= world.height) {
+        } else if (bullet.pos[0] <= bullet.radius+0.1 ||
+                   bullet.pos[1] <= bullet.radius+0.1 ||
+                   bullet.pos[0] >= world.width-bullet.radius - 0.1 ||
+                   bullet.pos[1] >= world.height-bullet.radius - 0.1) {
             deleting = true;
+            // publish
+            state.bulletsDelete = state.bulletsDelete || [ ];
+
+            state.bulletsDelete.push({
+                id: bullet.id,
+                x: parseFloat(bullet.pos[0].toFixed(2), 10),
+                y: parseFloat(bullet.pos[1].toFixed(2), 10)
+            });
+
+            // remove from world
+            world.remove('bullet', bullet);
+            world.physicsWorld.removeBody(bullet.rigidBody);
+            bullet.delete();
+
         } else {
             // for each tank around
             world.forEachAround('tank', bullet, function(tank) {
@@ -299,6 +326,7 @@ Lobby.prototype.update = function() {
 
             // remove from world
             world.remove('bullet', bullet);
+            world.physicsWorld.removeBody(bullet.rigidBody);
             bullet.delete();
         }
     });

@@ -1,6 +1,8 @@
 'use strict';
 
 var Vec2 = require('./vec2');
+var CANNON = require('.././node_modules/cannon');
+
 
 var bulletIds = 0;
 var tmpVec = Vec2.new();
@@ -12,8 +14,6 @@ function Bullet(owner) {
     this.owner = owner;
     this.id = ++bulletIds;
     this.damage = 2.5;
-    console.log("owner score");
-    console.log(owner.score);
     this.speed = .265*(Math.max((1-owner.score*0.004),0.6));
     this.radius = Math.min(.3+0.0075*owner.score,0.78);
     this.pos = Vec2.new(parseFloat(this.owner.pos[0].toFixed(3), 10), parseFloat(this.owner.pos[1].toFixed(3), 10));
@@ -21,6 +21,17 @@ function Bullet(owner) {
 
     this.target[0] = parseFloat(this.target[0].toFixed(3), 10);
     this.target[1] = parseFloat(this.target[1].toFixed(3), 10);
+
+
+    var radius = 1; // m
+    var sphereBody = new CANNON.Body({
+       mass: 5, // kg
+       position: new CANNON.Vec3(0, 0, 10), // m
+       shape: new CANNON.Sphere(radius)
+    });
+
+    this.rigidBody = sphereBody;
+
 }
 
 
